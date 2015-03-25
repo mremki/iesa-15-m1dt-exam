@@ -1,0 +1,5 @@
+/* Classe Enigma */
+function Enigma() 
+{ 	
+
+}
