@@ -7,15 +7,15 @@ function Calculator()
 		this.result += parseFloat(x);
 	}
 
-	this.minus = function(x, y) {
+	this.minus = function(x) {
 		this.result -= parseFloat(x);
 	}
 
-	this.divide  = function(x, y) {
+	this.divide  = function(x) {
 		this.result *= parseFloat(x);
 	}
 
-	this.multiply = function(x, y) {
+	this.multiply = function(x) {
 		this.result /= parseFloat(x);
 	}
 }

@@ -14,13 +14,16 @@
 	var calculatrice = new Calculator();
     assert.equal(calculatrice.result, 0, "result n'est pas initialiser a 0");
 	
-	assert.equal(calculatrice.add(3), undefined, "add(nbr) ne retourne rien");
+	assert.equal(calculatrice.add(3), undefined, "add(nbr) ne retourne rien.");
 	
-	assert.equal(calculatrice.result, 3, "result change de valeur selon l'appel des methodes");
+	assert.equal(calculatrice.result, 3, "result change de valeur selon l'appel des methodes.");
 	
-	assert.equal(calculatrice.add("a"), undefined, "add(nbr) ne retourne rien");
+	assert.equal(calculatrice.result, 3, "result change de valeur selon l'appel des methodes.");
 	
-	assert.equal(calculatrice.result, 3, "result change de valeur selon l'appel des methodes");
+	assert.ok (isNaN(calculatrice.add(2, 3)),"add ne prend pas 2 parametres.");
+
+	calculatrice.add("text");
+	assert.ok (isNaN(calculatrice.result),"result change de valeur selon l'appel des methodes. Peu importe leur parametres !");	
   });
   
   </script>
