@@ -10,26 +10,84 @@
  
   <script>
 
-  QUnit.test("Calculator behavior", function( assert ) {
-	var calculatrice = new Calculator();
-    assert.equal(calculatrice.result, 0, "result n'est pas initialiser a 0");
+  QUnit.test("Add behavior", function( assert ) {
+	var testAdd = new Calculator();
+    
+	assert.equal(testAdd.result, 0, "result change seulement si les methodes changent.");
 	
-	assert.equal(calculatrice.add(3), undefined, "add(nbr) ne retourne rien.");
+	assert.equal(testAdd.add(3), undefined, "add(nbr) ne retourne rien.");
 	
-	assert.equal(calculatrice.result, 3, "result change de valeur selon l'appel des methodes.");
+	assert.equal(testAdd.result, 3, "result change seulement si les methodes changent.");
 	
-	assert.equal(calculatrice.result, 3, "result change de valeur selon l'appel des methodes.");
+	assert.ok (isNaN(testAdd.add(2, 3)),"add ne prend pas 2 parametres.");
 	
-	assert.ok (isNaN(calculatrice.add(2, 3)),"add ne prend pas 2 parametres.");
+	assert.equal(testAdd.result, 3, "result change seulement si les methodes changent.");
+	
+	assert.ok (isNaN(testAdd.add("text")),"add prend seulement 1 parametres (nombre).");
 
-	calculatrice.add("text");
-	assert.ok (isNaN(calculatrice.result),"result change de valeur selon l'appel des methodes. Peu importe leur parametres !");	
+	assert.equal(testAdd.result, 3, "result change de valeur selon l'appel des methodes.");
   });
   
+  QUnit.test("Minus behavior", function( assert ) {
+	var testMinus = new Calculator();
+    
+	assert.equal(testMinus.result, 0, "result change seulement si les methodes changent.");
+	
+	assert.equal(testMinus.minus(3), undefined, "minus(nbr) ne retourne rien.");
+	
+	assert.equal(testMinus.result, -3, "result change seulement si les methodes changent.");
+	
+	assert.ok (isNaN(testMinus.minus(2, 3)),"minus ne prend pas 2 parametres.");
+	
+	assert.equal(testMinus.result, -3, "result change seulement si les methodes changent.");
+	
+	assert.ok (isNaN(testMinus.minus("text")),"minus prend seulement 1 parametres (nombre).");
+
+	assert.equal(testMinus.result, -3, "result change de valeur selon l'appel des methodes.");
+  });
+  
+  QUnit.test("Multiply behavior", function( assert ) {
+	var testMultiply = new Calculator();
+    
+	testMultiply.result = 1;
+	assert.equal(testMultiply.result, 1, "result change seulement si les methodes changent.");
+	
+	assert.equal(testMultiply.multiply(3), undefined, "multiply(nbr) ne retourne rien.");
+	
+	assert.equal(testMultiply.result, 3, "result change seulement si les methodes changent.");
+	
+	assert.ok (isNaN(testMultiply.multiply(2, 3)),"multiply ne prend pas 2 parametres.");
+	
+	assert.equal(testMultiply.result, 3, "result change seulement si les methodes changent.");
+	
+	assert.ok (isNaN(testMultiply.multiply("text")),"multiply prend seulement 1 parametres (nombre).");
+
+	assert.equal(testMultiply.result, 3, "result change de valeur selon l'appel des methodes.");
+  });
+  
+  QUnit.test("Divide behavior", function( assert ) {
+	var testDivide = new Calculator();
+	testDivide.result = 3;
+	
+	testDivide.divide(0);
+	assert.equal(testDivide.result, 3, "result change seulement si les methodes changent.");
+	
+	assert.equal(testDivide.divide(3), undefined, "divide(nbr) ne retourne rien.");
+	
+	assert.equal(testDivide.result, 1, "result change seulement si les methodes changent.");
+	
+	assert.ok (isNaN(testDivide.divide(2, 3)),"divide ne prend pas 2 parametres.");
+	
+	assert.equal(testDivide.result, 1, "result change seulement si les methodes changent.");
+	
+	assert.ok (isNaN(testDivide.divide("text")),"divide prend seulement 1 parametres (nombre).");
+
+	assert.equal(testDivide.result, 1, "result change de valeur selon l'appel des methodes.");
+  });
   </script>
 </head>
 <body>
- 
+	<a href="javascript:window.location.reload()">Recharger la page</a>
 	<div id="qunit-fixture"></div>
 	<div id="qunit"></div>
  
