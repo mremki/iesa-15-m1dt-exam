@@ -1,0 +1,25 @@
+
+.ExternalClass {width:100%;}
+.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height:100%;}
+body {-webkit-text-size-adjust:none; -ms-text-size-adjust:none;}
+/* Reset sur 0 des margins et padding. Dangeureux !!!*/
+body {
+	margin:auto; 
+	width: 100;
+	/*background-image: url('planetes/Ciel.jpg');
+	background-size : cover;*/
+}
+table {border-spacing:0;}
+table td {border-collapse:collapse;}
+	
+@media only screen and (max-width: 550px) {			
+	table[class=hide], td[class=hide], font[class=hide], hr[class=hide]{
+	display:none!important;
+	}			
+	table[class=largeur320b], center[class=largeur320b], td[class=largeur320b], img[class=largeur320b]{
+		width:320px !important;
+		display:block !important;
+		text-align: center;
+		height:auto;
+	}				
+}

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<planetes>
+	<planete>
+	   <title>Neptune</title>
+	   <taille>taille de Neptune</taille>
+	   <distance>distance km</distance>
+	   <description>Neptune est la huitième et dernière planète du Système solaire par distance croissante au Soleil.</description>
+	   <img>planetes/Neptune.jpg</img>
+	</planete>
+	<planete>
+	   <title>Uranus</title>
+	   <taille>taille Uranus</taille>
+	   <distance>distance km</distance>
+	   <description>Uranus est une planète géante de glaces de type Neptune froid. Il s'agit de la 7e planète du Système solaire par sa distance au Soleil</description>
+	   <img>planetes/Uranus.jpg</img>
+	</planete>
+	<planete>
+	   <title>Saturne</title>
+	   <taille>taille Saturn</taille>
+	   <distance>distance km</distance>
+	   <description>Saturne est la sixième planète du Système solaire par ordre de distance au Soleil et la deuxième après Jupiter tant par sa taille que par sa masse.</description>
+	   <img>planetes/Saturn.jpg</img>
+	</planete>
+    <planete>
+	   <title>Jupiter</title>
+	   <taille>taille de Jupiter</taille>
+	   <distance>distance km</distance>
+	   <description>Jupiter est une planète géante gazeuse. Il s'agit de la plus grosse planète du Système solaire, plus volumineuse et massive que toutes les autres planètes réunies, et la cinquième planète par sa distance au Soleil (après Mercure, Vénus, la Terre et Mars).</description>
+	   <img>planetes/Jupiter.jpg</img>
+	</planete>
+    <planete>
+	   <title>Mars</title>
+	   <taille>taille de Mars</taille>
+	   <distance>distance km</distance>
+	   <description>Mars est la quatrième planète par ordre de distance croissante au Soleil et la deuxième par masse et par taille croissantes sur les huit planètes que compte le Système solaire. Son éloignement au Soleil est compris entre 1,381 et 1,666 UA (206,6 à 249,2 millions de km), avec une période orbitale de 686,71 jours terrestres.</description>
+	   <img>planetes/Mars.jpg</img>
+	</planete>
+	<planete>
+	   <title>Terre</title>
+	   <taille>taille de Terre</taille>
+	   <distance>distance km</distance>
+	   <description>La Terre est une planète du Système solaire, la troisième au regard de la distance au Soleil. Il s'agit du sixième objet le plus grand, tant en taille qu'en masse, dans le Système solaire et la plus massive des planètes telluriques de ce système planétaire.</description>
+	   <img>planetes/Earth.jpg</img>
+	</planete>
+	<planete>
+	   <title>Venus</title>
+	   <taille>taille de Venus</taille>
+	   <distance>distance km</distance>
+	   <description>Vénus est la deuxième des huit planètes du Système solaire en partant du Soleil, et la sixième par masse ou par taille décroissantes.
+		La planète Vénus a été baptisée du nom de la déesse Vénus de la mythologie romaine.</description>
+	   <img>planetes/Venus.jpg</img>
+	</planete>
+	<planete>
+	   <title>Mercury</title>
+	   <taille>taille de Mercury</taille>
+	   <distance>distance km</distance>
+	   <description>Mercure est la planète la plus proche du Soleil et la moins massive du Système solaire1. Son éloignement au Soleil est compris entre 0,3075 et 0,4667 UA</description>
+	   <img>planetes/Mercury.jpg</img>
+	</planete>
+</planetes>
