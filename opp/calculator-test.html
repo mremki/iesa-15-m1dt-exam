@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Calculator Unit Tests</title>
+ 
+  <link rel="stylesheet" href="qunit-1.17.1.css">
+  <script src="qunit-1.17.1.js"></script>
+  <script src="Calculator.js"></script>
+ 
+  <script>
+
+  QUnit.test("Calculator behavior", function( assert ) {
+	var calculatrice = new Calculator();
+    assert.equal(calculatrice.result, 0, "result n'est pas initialiser a 0");
+	
+	assert.equal(calculatrice.add(3), undefined, "add(nbr) ne retourne rien");
+	
+	assert.equal(calculatrice.result, 3, "result change de valeur selon l'appel des methodes");
+	
+	assert.equal(calculatrice.add("a"), undefined, "add(nbr) ne retourne rien");
+	
+	assert.equal(calculatrice.result, 3, "result change de valeur selon l'appel des methodes");
+  });
+  
+  </script>
+</head>
+<body>
+ 
+	<div id="qunit-fixture"></div>
+	<div id="qunit"></div>
+ 
+</body>
+</html>
